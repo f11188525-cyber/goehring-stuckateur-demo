@@ -624,8 +624,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .team-avatar {
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent-mid), var(--accent-dark));
   display: grid;
@@ -635,7 +635,17 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.6rem;
   font-weight: 700;
   color: white;
-  border: 3px solid rgba(255,255,255,0.15);
+  border: 3px solid rgba(255,255,255,0.18);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.team-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .team-card h3 {
@@ -645,9 +655,18 @@ a { color: inherit; text-decoration: none; }
   color: #fff;
 }
 
+.team-card .role-title {
+  color: var(--accent-mid);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
 .team-card .role {
-  color: rgba(255,255,255,0.55);
-  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.82rem;
+  line-height: 1.5;
 }
 
 .team-card .since {
